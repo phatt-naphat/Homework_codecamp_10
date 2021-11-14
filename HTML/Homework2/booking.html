@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--This include Form, input type, label of input-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+</head>
+<body>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+    <h2>Welcome to booking page</h2>
+    <p><label for="departure">Flying from</label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <label for="arrive">To</label></p>
+    <p><input list="departure" name="departure">
+        <datalist id="departure">
+            <option value="Chiangmai">
+            <option value="Hatyai">
+            <option value="Chiangrai">
+            <option value="Bangkok">
+            <option value="Udonthani">
+        </datalist> &emsp;&emsp;
+       <input list="arrive" name="arrive">
+        <datalist id="arrive">
+            <option value="Chiangmai">
+            <option value="Hatyai">
+            <option value="Chiangrai">
+            <option value="Bangkok">
+            <option value="Udonthani">
+        </datalist>
+    </p>
+
+    <p> 
+        <label for="departing">Departing</label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <label for="arriving">Returning</label>
+    </p>
+    <p>
+        <input type="date" id="departing" name="departing">&emsp;&emsp;
+        <input type="date" id="arriving" name="arriving">
+    </p>
+            
+    <p>
+        <label for="adult">Adult</label> &emsp;&emsp;&emsp;
+        <label for="child">Child</label> &emsp;&emsp;&emsp;
+        <label for="infant">Infant</label> &emsp;&emsp;&emsp;
+        <label for="currency">Currency</label>
+    </p>
+    <p><input list="adult" name="adult" size="6">&emsp;&emsp;
+        <datalist id="adult">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+            <input list="child" name="child" size="6">&emsp;&emsp;
+            <datalist id="child">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+
+            <input list="infant" name="infant" size="6">&emsp;&emsp;
+            <datalist id="infant">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+            <input list="currency" name="currency" size="6">&emsp;&emsp;
+            <datalist id="currency">
+                <option value="THB">
+                <option value="USD">
+                <option value="EUR">
+                <option value="JPY">
+                <option value="CHY">
+                <option value="IDR">
+                <option value="INR">
+                <option value="SGD">
+                <option value="GBP">
+                <option value="MYR">
+            </datalist>
+    </p>
+        <input type="submit" value="Submit">
+    </form>
+    </body>         
+
+</html>
