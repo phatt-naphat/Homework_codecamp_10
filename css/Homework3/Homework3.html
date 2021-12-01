@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(240, 242, 245);
+    width: 100vw;   
+}
+.inbody{
+  width: 100%;
+  height: 100%;
+  padding: 0 40px 0 40px;
+  margin: 0 40px 0 40px;
+}
+input{
+  width: 364px;
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 14px 16px;
+  
+}
+
+.login{
+  background-color: #1877f2;
+  width: 364px;
+  height: 52px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 17px;
+  color: white;
+  border: 0px;
+}
+.register_box{
+  width: auto;
+  height: auto;
+}
+.register{
+  background-color: #42b72a;
+  width: 364px;
+  height: 52px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 17px;
+  color: white;
+  border: 0px;
+  width: 198px;
+  height: 48px;
+}
+
+ul{
+  color: grey;
+  text-align: center;
+  display: inline;
+}
+a{
+  color: #1877f2;
+  text-decoration: none;
+}
+a:hover{
+  color: #1877f2;
+  text-decoration: underline;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.col{
+  text-align: center;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+  width: 100vw;
+  height: 120vh;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.lside {
+  padding: 15px;
+  color: rgb(1c, 1e, 21);
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10%;
+}
+.facebook_logo{
+    height: 106px;
+    margin: 8px;
+}
+.rside {
+    width: 396px;
+    height: 496px;
+}
+.loginbox{
+    margin-top: 10%;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.line{
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  display: flex;
+  margin: 20px 16px;
+  text-align: center;
+}
+
+footer {
+  background-color:white;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  width: 100vw;
+  height: 20vh;
+}
+.facebook_phrase{
+    text-align: center;
+    color: rgb(1c, 1e, 21);
+    font-size: 24px;
+}
+.create_page{
+  color: #1c1e21;
+  font-size: 14px;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  margin-top: 100px;
+}
+.page{
+  color: #1c1e21;
+  font-size: 14px;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+}
+.page:hover{
+  color: #1c1e21;
+  font-size: 14px;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="inbody">
+    <div class="col-6 lside">
+      <img class="facebook_logo" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="">
+      <p class="facebook_phrase">Facebook helps you connect and share with the people in your life.</p>
+    </div>
+    <div class="col-s-6">
+      <div class="rside">
+          <div class="loginbox">
+            <p><input type="text" placeholder="Email address or Phone number" autofocus="1"></p>
+            <p><input type="text" placeholder="Password" autofocus="1"></p>
+            <p><button class="login" value="1" name="login" >Log In</button></p>
+            <p><a href="#">Forgotten Password?</a></p>
+            <p class="line"></p>
+            <p><button class="register" value="1" name="register" id="register">Create New Account</button></p>
+            <p class="create_page"><a href="#" class="page">Create a Page</a> for a celebrity, brand or business.</p>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+<footer>
+ 
+    <div class="footer col-12 col-s-12">
+      <p>  
+        <ul>English (UK)</ul>
+        <ul>ภาษาไทย</ul>
+        <ul>日本語</ul>
+        <ul>中文(简体)</ul>
+        <ul>Tiếng Việt</ul>
+        <ul>Français (France)</ul>
+        <ul>Deutsch</ul>
+        <ul>Русский</ul>
+        <ul>Español</ul>
+        <ul>Português (Brasil)</ul>
+        <ul>Itaulano</ul>
+    </p>
+    <p>
+      <ul>Login</ul>
+      <ul>Sign up </ul>
+      <ul>Massenger</ul>
+      <ul>Facebook Lite</ul>
+      <ul>Watch</ul>
+      <ul>Places</ul>
+      <ul>Games</ul>
+      <ul>Market Place </ul>
+      <ul>Facebook Pay</ul>
+      <ul>Jobs</ul>
+      <ul>Oculus</ul>
+      <ul>Portal</ul>
+      <ul>Instagram</ul>
+      <ul>Bulletin</ul>
+      <ul>Local</ul>
+      <ul>Fundraiser</ul>
+      <ul>Service</ul>
+      <ul>Votinginformation Center</ul>
+      <ul>Group</ul>
+      <ul>Create Ad</ul>
+      <ul>Create page</ul>
+      <ul>Developers</ul>
+      <ul>Career</ul>
+      <ul>Privacy</ul>
+      <ul>Cookies</ul>
+      <ul>Aschocie</ul>
+      <ul>Terms</ul>
+      <ul>Helps </ul>
+
+    </p>
+    </div>
+</footer>
+
+</html>
