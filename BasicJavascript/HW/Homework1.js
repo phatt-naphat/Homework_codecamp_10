@@ -33,16 +33,20 @@ false - true + false - true + false;        //-2
 "12" !== 12   //true
 "15" != 15    //false
 "A" > "B"     //false
-"B" < "C"
-"a" > "A"
-"b" < "A"
-"bee" > "bbe"
-"BeE" < "Bee"
-"SonTer" > "Soncom"
-"circle" > "circles"
-"NaRuTo" < "nArUtO"
-true === false
-true != true
+"B" < "C"     //true
+"a" > "A"     //true
+"b" < "A"     //false
+"bee" > "bbe"   //true
+"BeE" < "Bee"   //true
+"SonTer" > "Soncom"     //false
+"circle" > "circles"    //false
+"NaRuTo" < "nArUtO"     //true
+true === false          //false
+true != true            //false
 
 
 // 3. สร้าง String ที่มีค่า "Hello, It's me. "Mario"."
+
+let str = `Hello, It's me. "Mario".`
+
+console.log(str)      //Hello, It's me. "Mario".
