@@ -39,3 +39,20 @@ while (i++ < 10) alert(i);
 for (let i = 0; i < 3; i++) {
   alert( `number ${i}!` );
 }
+
+
+//6. ให้เขียนเกมส์ทายตัวเลขสำหรับเล่นสองคน โดย
+
+let i = prompt("Please enter the number between 1 - 100");
+if(i >= 1 && i <= 100){
+    while (true) {
+    let j = prompt("Please enter the second number in range of 1 - 100");
+    if(j === i) { alert("Correct"); break;} 
+    else if (j > i) {alert("It's more than the first number");}
+    else if (j < i) {alert("It's less than the first number");}
+    else {alert("Please enter the number in range of 1 - 100")}
+    }
+}
+else { alert("Please try again later"); }
+
+
