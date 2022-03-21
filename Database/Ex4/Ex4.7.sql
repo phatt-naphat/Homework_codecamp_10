@@ -1,1 +1,8 @@
-select distinct sname from Sailors left join Reserves on Sailors.sid = Reserves.sid left join Boats on Reserves.bid = Boats.bid where color = 'red' and 'green';
+SELECT DISTINCT sname FROM Sailors S WHERE S.sname IN
+(SELECT distinct S.sname FROM Sailors S LEFT JOIN Reserves R
+ON S.sid = R.sid LEFT JOIN Boats B ON R.bid = B.bid
+WHERE B.color = 'Red')
+AND S.sname IN
+(SELECT distinct S.sname FROM Sailors S LEFT JOIN Reserves R
+ON S.sid = R.sid LEFT JOIN Boats B ON R.bid = B.bid
+WHERE B.color = 'Green');
