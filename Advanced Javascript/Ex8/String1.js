@@ -1,4 +1,5 @@
-let str = prompt("Enter string: ");
+function ucFirst(string) {
 
-str2 = str[0].toUpperCase() + str.substring(1);
+str2 = string[0].toUpperCase() + string.substring(1);
 console.log(str2);
+}
