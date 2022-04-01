@@ -19,4 +19,4 @@ let array2 = array1.map( function(item) {
     return obj;
 })
 
-console.log(obj);
+console.log(array2);
