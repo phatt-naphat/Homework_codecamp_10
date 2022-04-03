@@ -1,7 +1,7 @@
 function sumSalaries(obj) {
     let sum = 0;
-    for ( let i in salaries ){
-        sum = sum + salaries[i];
+    for ( value of Object.values(obj) ){
+        sum += value;
     }
     return `Sum of salaries = ${sum}`
 }
