@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Table } from "antd";
+import { Table, Row, Col} from "antd";
 
 function App() {
   const students =[{
@@ -43,22 +43,34 @@ function App() {
 
   const columns = [
     {
+      title: "อีเมล์",
+      dataIndex: "email"
+    },
+    {
+      title: "เพศ",
+      dataIndex: "gender"
+    },
+    {
       title: "ชื่อจริง",
-      dataindex: "first_name"
+      dataIndex: "first_name"
     },
     {
       title: "นามสกุล",
-      dataindex: "last_name"
+      dataIndex: "last_name"
     },
     {
       title: "มหาวิทยาลัย",
-      dataindex: "university"
+      dataIndex: "university"
     },
   ]
 
   return (
     <div className="App">
-      <Table columns={columns} dataSource = {students} />
+      <Row justify='center'>
+        <Col xs={24} sm={24} md={20} lg={14} xl={14} xxl={12}>
+          <Table bordered columns={columns} dataSource = {students} size = "middle" />
+        </Col>
+      </Row>
     </div>
   );
 }
